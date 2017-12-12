@@ -5,6 +5,7 @@ public class dbConnect {
         public String url = "172.16.20.180";
         public String port = "3306"; //8889
         public String database = "hacklnjava";
+      //  String relation=""
         public String user = "admin";
         public String password = "stcs";//root
         public String JDBC_DRIVER = "com.mysql.jdbc.Driver";
@@ -19,7 +20,8 @@ public class dbConnect {
             stmnt=db.Conn2DB();
             //  Statement dbstmt=null;
             try {
-                stmnt.executeUpdate("insert into userdetails values(1000102,'Wsta','loves wayiti','jj',3)");
+                //stmnt.executeUpdate("insert into userdetails values(1000102,'Wsta','loves wayiti','jj',3)");
+                stmnt.executeUpdate("select * from  ");
                 ResultSet res=stmnt.executeQuery("select  * from userdetails ");
 
                 while(res.next())
